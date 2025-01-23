@@ -1,9 +1,9 @@
 :root{
   --color-background: #FFAE00;
   --colorpink-logo: #FFC4D8;
-  --logonav-width: 300px;
-  --last-column: 300px;
-  --header-height: 200px;
+  --logonav-width: 7em;
+  --last-column: 7em;
+  --header-height: 100px;
   --footer-height: 300px;
 }
 
@@ -12,7 +12,7 @@
   margin: 0;
 }
 
-.app{
+.container > .app{
   display: grid;
   grid-template-columns: var(--logonav-width) 1fr var(--last-column);
   grid-template-rows: 
@@ -20,26 +20,20 @@
     1fr
     var(--footer-height)
   ;
-  grid-template-areas:
-    "logo header header"
-    "body body body"
-    "logo footer footer"
-  ;
 }
 
-.container > header.header{
+.container > header{
   grid-area: header;
 }
 
-.container > aside.logo{
+.container > aside{
   grid-area: logo;
-  background-color: var(--colorpink-logo);
 }
 
-.container > main.body{
+.container > main{
   grid-area: body;
 }
 
-.container > footer.footer{
+.container > footer{
   grid-area: footer;
 }

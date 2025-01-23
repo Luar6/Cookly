@@ -3,7 +3,7 @@ import './Body.css'
 
 function Body(){
     return(
-        <main className="body">
+        <main className="body-content">
             Page
         </main>
     );

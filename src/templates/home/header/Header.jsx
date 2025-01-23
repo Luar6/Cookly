@@ -3,7 +3,9 @@ import './Header.css'
 
 function Header(){
     return(
-        <header className="header">Page</header>
+        <header className="header">
+            <p className='title'>Cookly</p>
+        </header>
     )
 };
 
