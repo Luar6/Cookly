@@ -13,9 +13,9 @@
     --logo-height: 100px;
     --menu-top-height: 100px;
     --header-height:100px;
-    --aside-width: 225px;
+    --aside-width: 150px;
     --aside-width-logo-checkpoint: 170px;
-    --footer-height: 100px;
+    --footer-height: 150px;
     --shadow: 
         0 5px 43px 0 rgba(0,0,0,0.2),
         0 2px 49px 0 rgba(0,0,0,0.06)
@@ -23,6 +23,7 @@
 
 *{
     box-sizing: border-box;
+    margin:0
 }
 
 /* Layout grid */
@@ -37,8 +38,8 @@
         var(--footer-height)
     ;
     grid-template-areas: 
-        "logo nav"
-        "content content"
+        "logo header"
+        "nav content"
         "footer footer"
     ;
     height: 100vh;
@@ -50,6 +51,10 @@ aside.logo{
 
 nav.nav{
     grid-area: nav;
+}
+
+header.header-content{
+    grid-area: header;
 }
 
 main.content{

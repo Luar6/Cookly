@@ -8,6 +8,24 @@
 
 }
 
+.container-fluid > .title{
+    align-items: center;
+}
+
+.container-fluid > .title > .main-title{
+    font-size: 30px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    color:#ffffff;
+    margin: 0;
+}
+
+.container-fluid > .title > .description{
+    color:#ffffff;
+    font-family: "Slabo";
+    font-size: 22px;
+}
+
 .container-fluid > nav > .container-fluid > .collapse{
     margin-right: 15px;
 }
