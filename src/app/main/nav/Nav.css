@@ -1,28 +1,15 @@
-.container-fluid{
+.container-fluid {
     display: flex;
-    background-color: #f8a813;
-    align-items: center;
-    margin:0;
-    padding: 0;
-    justify-content: space-between;
-
 }
 
-.container-fluid > nav > .container-fluid > .collapse{
-    margin-right: 15px;
-}
-
-.container-fluid > nav  ul.navbar-nav{
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    height: 100%;
-    margin-right: 20px;
+.container-fluid > .navbar{
     
+    box-shadow: var(--shadow);
 }
 
-.container-fluid > nav  ul.navbar-nav > li{
+
+
+.navbar ul.navbar-nav > li{
     font-family: "Slabo";
     font-weight: 500;
-    color:#ffffff
 }
