@@ -1,15 +1,33 @@
-.container-fluid {
+.navbar{
     display: flex;
+    width: 100%;
+    background-color: #e7883e;
+    padding: 0px;
+    justify-content: center;
 }
 
-.container-fluid > .navbar{
-    
-    box-shadow: var(--shadow);
+.navbar ul.navbar-nav{
+    justify-content: center;
+    width: 55%;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
+.navbar ul.navbar-nav > li .nav-link{
+    color: #FFF;
+    font-weight: 400;
+    transition: opacity ease-in-out 200ms;
+}
 
+.navbar ul.navbar-nav > li .nav-link:hover{
+    opacity:calc(0.6) ;
+}
 
-.navbar ul.navbar-nav > li{
-    font-family: "Slabo";
-    font-weight: 500;
+@media(max-width: 650px){
+    .navbar ul.navbar-nav{
+        justify-content: center;
+        width: 80%;
+        justify-content: space-around;
+        flex-direction: row;
+    }
 }

@@ -2,4 +2,25 @@ import React from "react";
 import './Footer.css'
 
 export default props =>
-    <footer className="footer">footer</footer>
+    <footer className="footer">
+        <div className="row">
+            <div className="col">
+                <p className="developed-by">Desenvolvido por <a className="footer-link" href="">Luar6</a></p>
+                <p className="copyright">Direitos Autorais &#169; [2025] - Todos os direitos reservados</p>
+            </div>
+            <div className="col">
+                <ul>
+                    <li><a className="footer-link" href="">Contatos</a></li>
+                    <li><a className="footer-link" href="">Sobre Nós</a></li>
+                    <li><a className="footer-link" href="">Central de Suporte</a></li>
+                </ul>
+            </div>
+            <div className="col">
+                <ul>
+                    <li><a className="footer-link" href="">Email</a></li>
+                    <li><a className="footer-link" href="">Instagram</a></li>
+                    <li><a className="footer-link" href="">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>

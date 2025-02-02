@@ -7,23 +7,22 @@
     /*
         variáveis em css: modelos padrões que podem ser requisitados no documento
     */
-    --bg-light: rgb(235, 235, 235);
-    --bg-dark: rgb(67, 73, 95);
-    --bg-logo: rgb(247, 247, 247);
-    --logo-height: 100px;
+    --nav-height: 70px;
     --menu-top-height: 100px;
     --header-height:100px;
     --aside-width: 150px;
-    --aside-width-logo-checkpoint: 170px;
-    --footer-height: 150px;
+    --headerh-checkpoint: 130px;
+    --footer-height:350px;
     --shadow: 
         0 5px 43px 0 rgba(0,0,0,0.2),
         0 2px 49px 0 rgba(0,0,0,0.06)
 }
 
 *{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    margin:0
+
 }
 
 /* Layout grid */
@@ -34,12 +33,14 @@
     grid-template-columns: var(--aside-width) 1fr;
     grid-template-rows: 
         var(--header-height)
+        var(--nav-height)
         1fr
         var(--footer-height)
     ;
     grid-template-areas: 
         "logo header"
-        "nav content"
+        "nav nav"
+        "content content"
         "footer footer"
     ;
     height: 100vh;
@@ -49,7 +50,7 @@ aside.logo{
     grid-area: logo;
 }
 
-nav.nav{
+nav.navbar{
     grid-area: nav;
 }
 
@@ -69,4 +70,23 @@ footer.footer{
     Associar cada área do grid ao componente
     Divisão feita em forma de "matriz"
 */
-
+@media(max-width: 650px){
+    .app{
+        margin: 0px;
+        display: grid;
+        grid-template-columns: var(--aside-width) 1fr;
+        grid-template-rows: 
+            var(--headerh-checkpoint)
+            var(--nav-height)
+            1fr
+            var(--footer-height)
+        ;
+        grid-template-areas: 
+            "logo header"
+            "nav nav"
+            "content content"
+            "footer footer"
+        ;
+        height: 100vh;
+    }
+}
