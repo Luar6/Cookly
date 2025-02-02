@@ -1,0 +1,15 @@
+.logo{
+    background-color: #e7883e;
+}
+
+.logo img{
+    width: 100%;
+    height: 105%;
+}
+
+@media(max-width:650px){
+    .logo img{
+        width: 100%;
+        height: 80%;
+    }
+}
