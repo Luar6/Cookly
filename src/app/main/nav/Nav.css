@@ -7,7 +7,6 @@
 }
 
 .navbar ul.navbar-nav{
-    justify-content: center;
     width: 55%;
     justify-content: space-around;
     flex-direction: row;
@@ -17,6 +16,7 @@
     color: #FFF;
     font-weight: 400;
     transition: opacity ease-in-out 200ms;
+    font-family: "Roboto";
 }
 
 .navbar ul.navbar-nav > li .nav-link:hover{
