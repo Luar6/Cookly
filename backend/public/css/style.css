@@ -138,6 +138,9 @@ div.container-fluid{
     width: 90%;
     padding:30px;
     border-radius: 15px;
+    box-shadow: 
+        0 5px 43px 0 rgba(0,0,0,0.2),
+        0 2px 49px 0 rgba(0,0,0,0.06);
 }
 
 
@@ -159,5 +162,8 @@ div.container-fluid{
     }
 }
 
-
+.container-fluid > form .btn{
+    background-color: #e7883e;
+    color: #FFF;
+}
 
