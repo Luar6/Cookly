@@ -8,6 +8,6 @@ export default props =>
         </div>
         <div className="box-end">
             <p className="description">Cozinhe, economize e compartilhe seu talento! Junte-se à comunidade que transforma paixão em sabor</p>
-            <a href="" className="button">Comece Agora</a>
+            <a href="home.html" className="button">Comece Agora</a>
         </div>
     </main>
