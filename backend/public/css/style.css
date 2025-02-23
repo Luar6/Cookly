@@ -82,7 +82,7 @@ div.container-fluid{
 }
 
 /*nav-routes*/
-.navbar-routes{
+.navbar-route{
     display: flex;
     align-items: center;
     justify-content: center;
