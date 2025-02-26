@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-
+const recipes = require("./data/recipes.json");
 // Rota para renderizar a página de cadastro
 app.get('/cadastro', (req, res) => {
     res.render('cadastro'); // Arquivo views/cadastro.ejs
@@ -28,7 +28,7 @@ app.get('/login', (req, res) => {
 });
 
 app.get("/app", (req, res) => {
-    res.render('app');
+    res.render('app', {recipes});
 });
 
 

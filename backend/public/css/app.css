@@ -10,7 +10,7 @@
 .content{
     display: grid;
     margin: 0px;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 140px 1fr 140px;
     grid-template-rows: 
         100px
         1fr
@@ -36,8 +36,8 @@
     grid-area: nav;
 }
 
-.container{
-    grid: content;
+.container-fluid{
+    grid-area: content;
 }
 
 .footer{
@@ -66,7 +66,7 @@
     text-decoration: none;
     color: #FFF;
     
-    margin-top: 34px;
+    margin-top: 30px;
     font-size: 28px;
     font-weight: bold;
 }
@@ -106,4 +106,32 @@
         justify-content: space-around;
         list-style: none;
     }  
+}
+
+/*CONTEUDO / CONTAINER FLUID*/
+.intro{
+    display: flex;
+}
+
+.intro > .introduction{
+    font-family: "Slabo";
+    width: 30%;
+}
+
+.container-fluid{
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-box{
+    margin-bottom: 50px ;
+}
+.btn{
+    background-color: #e7883e;
+    color: #FFF;
+}
+.card{
+    width: 20rem
 }
