@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const connect = require("./config/db");
 
 const app = express();
 const PORT = 5000;
@@ -16,7 +17,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-const recipes = require("./data/recipes.json");
 // Rota para renderizar a página de cadastro
 app.get('/cadastro', (req, res) => {
     res.render('cadastro'); // Arquivo views/cadastro.ejs
@@ -27,7 +27,10 @@ app.get('/login', (req, res) => {
     res.render('login'); // Arquivo views/login.ejs
 });
 
-app.get("/app", (req, res) => {
+app.get("/app", async (req, res) => {
+    const db = await connect();
+    const recipes = await db.collection("receitas").find().toArray(); // Busca receitas no MongoDB
+    console.log(recipes);
     res.render('app', {recipes});
 });
 
