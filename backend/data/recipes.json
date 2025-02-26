@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "nome": "Pizza",
+    "descricao": "Uma deliciosa pizza de queijo",
+    "preco": 39.99,
+    "preparo": "Misture os ingredientes, abra a massa, adicione o recheio e asse por 20 minutos.",
+    "ingredientes": [
+      { "nome": "Farinha de trigo", "preco": 5.00 },
+      { "nome": "Queijo muçarela", "preco": 12.00 },
+      { "nome": "Molho de tomate", "preco": 4.50 }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Hambúrguer",
+    "descricao": "Hambúrguer artesanal com queijo",
+    "preco": 25.50,
+    "preparo": "Grelhe a carne, adicione queijo e monte o lanche com pão e molho especial.",
+    "ingredientes": [
+      { "nome": "Pão de hambúrguer", "preco": 3.00 },
+      { "nome": "Carne bovina", "preco": 15.00 },
+      { "nome": "Queijo cheddar", "preco": 5.50 }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Lasanha",
+    "descricao": "Massa recheada com carne e molho branco",
+    "preco": 42.00,
+    "preparo": "Cozinhe a massa, faça o molho e monte em camadas antes de assar.",
+    "ingredientes": [
+      { "nome": "Massa de lasanha", "preco": 10.00 },
+      { "nome": "Carne moída", "preco": 20.00 },
+      { "nome": "Molho branco", "preco": 8.00 }
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Salada Caesar",
+    "descricao": "Salada leve com frango grelhado e molho especial",
+    "preco": 18.90,
+    "preparo": "Grelhe o frango, misture a alface e finalize com molho e queijo ralado.",
+    "ingredientes": [
+      { "nome": "Alface americana", "preco": 5.00 },
+      { "nome": "Frango grelhado", "preco": 8.00 },
+      { "nome": "Molho caesar", "preco": 3.00 }
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "Espaguete à Carbonara",
+    "descricao": "Espaguete com molho cremoso de ovos, queijo parmesão, bacon e pimenta preta",
+    "preco": 30.00,
+    "preparo": "Cozinhe o espaguete em água com sal. Enquanto isso, frite o bacon até ficar crocante. Em uma tigela, bata os ovos e misture com o queijo parmesão. Após o espaguete estar pronto, escorra e adicione ao bacon. Despeje a mistura de ovos e queijo e mexa até formar um molho cremoso. Tempere com pimenta preta.",
+    "ingredientes": [
+      { "nome": "Espaguete", "preco": 6.00 },
+      { "nome": "Bacon", "preco": 10.00 },
+      { "nome": "Ovos", "preco": 4.00 },
+      { "nome": "Queijo parmesão", "preco": 8.00 },
+      { "nome": "Pimenta preta", "preco": 2.00 }
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "Strogonoff de Frango",
+    "descricao": "Frango cozido com molho cremoso de creme de leite e ketchup",
+    "preco": 35.00,
+    "preparo": "Corte o frango em cubos e frite até dourar. Adicione a cebola picada e o alho, refogando até ficarem macios. Acrescente o ketchup, o molho inglês e o creme de leite. Misture bem até o molho ficar homogêneo. Cozinhe por mais 10 minutos em fogo baixo e sirva com arroz e batata palha.",
+    "ingredientes": [
+      { "nome": "Peito de frango", "preco": 12.00 },
+      { "nome": "Creme de leite", "preco": 6.00 },
+      { "nome": "Ketchup", "preco": 3.00 },
+      { "nome": "Molho inglês", "preco": 2.00 },
+      { "nome": "Cebola", "preco": 1.00 },
+      { "nome": "Alho", "preco": 1.50 }
+    ]
+  },
+  {
+    "id": 7,
+    "nome": "Risoto de Cogumelos",
+    "descricao": "Risoto cremoso com cogumelos frescos e parmesão",
+    "preco": 40.00,
+    "preparo": "Em uma panela, refogue a cebola e o alho até ficarem macios. Adicione o arroz arbóreo e frite por 2 minutos. Adicione o caldo de legumes aos poucos, mexendo sempre até o arroz absorver o líquido. Em outra frigideira, refogue os cogumelos e adicione ao risoto junto com o queijo parmesão. Cozinhe por mais 10 minutos até o risoto ficar cremoso.",
+    "ingredientes": [
+      { "nome": "Arroz arbóreo", "preco": 6.00 },
+      { "nome": "Cogumelos frescos", "preco": 10.00 },
+      { "nome": "Queijo parmesão", "preco": 8.00 },
+      { "nome": "Cebola", "preco": 1.00 },
+      { "nome": "Alho", "preco": 1.50 },
+      { "nome": "Caldo de legumes", "preco": 2.50 }
+    ]
+  },
+  {
+    "id": 8,
+    "nome": "Feijoada",
+    "descricao": "Feijoada tradicional com carne de porco e feijão preto",
+    "preco": 50.00,
+    "preparo": "Deixe o feijão preto de molho por 12 horas. Em uma panela grande, frite as carnes (costelinha, carne seca, paio e linguiça) até dourarem. Acrescente a cebola, o alho e o tomate e refogue. Adicione o feijão, as carnes e água suficiente para cobrir tudo. Cozinhe por 2 horas em fogo baixo até o feijão e as carnes estarem bem cozidos. Sirva com arroz branco e couve.",
+    "ingredientes": [
+      { "nome": "Feijão preto", "preco": 8.00 },
+      { "nome": "Costelinha de porco", "preco": 12.00 },
+      { "nome": "Carne seca", "preco": 10.00 },
+      { "nome": "Paio", "preco": 5.00 },
+      { "nome": "Linguiça calabresa", "preco": 6.00 },
+      { "nome": "Cebola", "preco": 1.00 },
+      { "nome": "Alho", "preco": 1.50 },
+      { "nome": "Tomate", "preco": 2.00 }
+    ]
+  },
+  {
+    "id": 9,
+    "nome": "Tacos",
+    "descricao": "Tacos mexicanos com carne moída e guacamole",
+    "preco": 28.00,
+    "preparo": "Frite a carne moída com cebola e alho até dourar. Tempere com cominho, pimenta, sal e molho de tomate. Recheie as tortillas com a carne e adicione o guacamole, cebola roxa picada e coentro. Sirva com fatias de limão.",
+    "ingredientes": [
+      { "nome": "Tortilla", "preco": 6.00 },
+      { "nome": "Carne moída", "preco": 12.00 },
+      { "nome": "Cebola", "preco": 1.00 },
+      { "nome": "Alho", "preco": 1.50 },
+      { "nome": "Cominho", "preco": 1.00 },
+      { "nome": "Guacamole", "preco": 5.00 },
+      { "nome": "Limão", "preco": 2.00 }
+    ]
+  },
+  {
+    "id": 10,
+    "nome": "Peixe Assado com Ervas",
+    "descricao": "Peixe assado com limão, alho e ervas frescas",
+    "preco": 45.00,
+    "preparo": "Tempere o peixe com suco de limão, sal, pimenta, alho picado e ervas finas. Deixe marinar por 30 minutos. Coloque o peixe em uma assadeira e leve ao forno a 180°C por 25 minutos. Sirva com legumes assados.",
+    "ingredientes": [
+      { "nome": "Peixe (tilápia ou outro)", "preco": 20.00 },
+      { "nome": "Alho", "preco": 1.50 },
+      { "nome": "Limão", "preco": 2.00 },
+      { "nome": "Ervas finas", "preco": 3.00 }
+    ]
+  }
+]
+
