@@ -13,11 +13,13 @@
     grid-template-columns: 140px 1fr 140px;
     grid-template-rows: 
         100px
+        90px
         1fr
         100px
     ;
     grid-template-areas:
         "logo header nav"
+        "intro intro intro"
         "content content content"
         "footer footer footer"
     ;
@@ -34,6 +36,10 @@
 
 .navbar{
     grid-area: nav;
+}
+
+.intro{
+    grid-area: intro;
 }
 
 .container-fluid{
@@ -65,7 +71,6 @@
 .header > .navbar-brand{
     text-decoration: none;
     color: #FFF;
-    
     margin-top: 30px;
     font-size: 28px;
     font-weight: bold;
@@ -79,50 +84,35 @@
     justify-content: center;
 }
 
-.navbar > .navbar-container{
-    display: flex;
-    width: 55%;
-    padding:0;
-    justify-content: space-around;
-    list-style: none;
-}
 
-.navbar > .navbar-container > li > a{
-    text-decoration: none;
-    font-size: 16px;
-    color: #FFF;
-    transition: opacity ease-in-out 100ms;
-    font-family: "Roboto";
-}
-
-.navbar > .navbar-container > li > a:hover{
-    opacity: calc(0.6);
-}
-
-@media(max-width:650px){
-    .navbar-routes > .navbar-container{
-        display: flex;
-        width: 80%;
-        justify-content: space-around;
-        list-style: none;
-    }  
-}
 
 /*CONTEUDO / CONTAINER FLUID*/
-.intro{
-    display: flex;
-}
-
-.intro > .introduction{
-    font-family: "Slabo";
-    width: 30%;
-}
 
 .container-fluid{
-    margin-top:100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.introduction{
+    max-width: 450px;
+    font-family: "Slabo";
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #f38734;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 
+        0 5px 43px 0 rgba(0,0,0,0.2),
+        0 2px 49px 0 rgba(0,0,0,0.06);
 }
 
 .title-box{
@@ -134,4 +124,22 @@
 }
 .card{
     width: 20rem
+}
+
+@media(max-width: 1050px){
+    .intro{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+}
+
+@media(max-width: 690px){
+    .container-fluid > .row > .col{
+        display: flex;
+        justify-content: center;
+    }
+
+    
 }

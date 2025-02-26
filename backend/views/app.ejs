@@ -28,14 +28,20 @@
         </nav>
         <div class="container-fluid">
             <div class="intro">
-                <div class="introduction"><h3>"Bem-vindo ao Cookly! Aqui você encontra receitas deliciosas para transformar sua cozinha em um verdadeiro restaurante. Vamos começar a cozinhar?"</h3></div>
-                <div class="image"><img src="/assets/foods-image.png" alt=""></div>
+                <div class="row">
+                    <div class="col">
+                        <div class="introduction">
+                            <h3>Bem-vindo ao Cookly! Aqui você encontra receitas deliciosas para transformar sua cozinha em um verdadeiro restaurante. Vamos começar a cozinhar?</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="title-box"><h2 class="title">Mais Pesquisadas</h2></div>
             <div class="row">
                 <% recipes.forEach(produto => { %>
-                    <div class="col">
-                        <div class="card mb-3">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="<%= produto.imagem %>" alt="<%= produto.nome %>" class="card-img-top" style="height: 200px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title"><%= produto.nome %></h5>
                                 <p class="card-text"><%= produto.descricao %></p>
